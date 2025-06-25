@@ -26,6 +26,6 @@ for _ in range(10000):  # Simulate 10,000 events
     producer.send(topic, event)
     print(f"Produced: {event}")
     time.sleep(0.01)  # 10ms interval
-
+# Ensure all messages are sent before closing the producer
 producer.flush()
 producer.close()
