@@ -27,6 +27,5 @@ for _ in range(10000):  # Simulate 10,000 events
     print(f"Produced: {event}")
     time.sleep(0.01)  # 10ms interval
 
-
 producer.flush()
 producer.close()
